@@ -5,46 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <style>
-    /* Reset & base */
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
       background-color: #0f0f0f;
       color: #eaeaea;
       line-height: 1.6;
-      padding: 40px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      transition: background 0.3s ease;
+      padding: 40px 20px;
     }
 
     header {
-      max-width: 800px;
+      max-width: 700px;
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
     h1 {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       margin-bottom: 10px;
       color: #fff;
     }
 
     p.subtitle {
       font-size: 1rem;
-      color: #999;
+      color: #aaa;
     }
 
     main {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
       width: 100%;
+      max-width: 800px;
     }
 
     .portfolio-item {
+      width: 100%;
       background: #181818;
       border-radius: 12px;
       overflow: hidden;
@@ -64,16 +64,35 @@
       border: none;
     }
 
-    .caption {
-      padding: 15px;
-      font-size: 0.9rem;
-      color: #bbb;
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .item-title {
+      font-size: 1.3rem;
+      color: #fff;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .description {
+      font-size: 0.95rem;
+      color: #aaa;
+      margin-bottom: 12px;
+    }
+
+    .tools {
+      font-size: 0.85rem;
+      color: #888;
+      font-style: italic;
     }
 
     footer {
       margin-top: 60px;
       font-size: 0.8rem;
       color: #666;
+      text-align: center;
     }
 
     a {
@@ -100,27 +119,39 @@
               allow="autoplay; fullscreen; picture-in-picture"
               allowfullscreen>
       </iframe>
-      <div class="caption">Vimeo Project Title</div>
+      <div class="content">
+        <div class="item-title">Motion Design Reel</div>
+        <p class="description">
+          A short motion graphics experiment exploring light, texture, and rhythm.
+        </p>
+        <p class="tools">Tools used: After Effects · Cinema 4D · Premiere Pro</p>
+      </div>
     </div>
 
     <!-- Image Example -->
     <div class="portfolio-item">
       <img src="https://via.placeholder.com/800x450" alt="Project Image" />
-      <div class="caption">Photography Project</div>
+      <div class="content">
+        <div class="item-title">Photography Series</div>
+        <p class="description">
+          A collection of urban night photography emphasizing reflections and neon light.
+        </p>
+        <p class="tools">Tools used: Lightroom · Photoshop · Sony A7 IV</p>
+      </div>
     </div>
 
-    <!-- Add more portfolio items below -->
+    <!-- Add more items below -->
     <!--
     <div class="portfolio-item">
       <iframe src="https://player.vimeo.com/video/YOUR_VIDEO_ID" allowfullscreen></iframe>
-      <div class="caption">Another Vimeo Video</div>
+      <div class="content">
+        <div class="item-title">Project Title</div>
+        <p class="description">Short description of your project.</p>
+        <p class="tools">Tools used: Blender · DaVinci Resolve · Illustrator</p>
+      </div>
     </div>
     -->
   </main>
 
   <footer>
-    <p>© 2025 Your Name · <a href="https://github.com/yourusername">GitHub</a></p>
-  </footer>
-
-</body>
-</html>
+    <p>© 2025 Your Name · <a href="https://github.com/yourusername">GitHub</a>
